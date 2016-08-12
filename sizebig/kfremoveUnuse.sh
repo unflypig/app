@@ -24,5 +24,4 @@ for i in `ls .`; do
     echo -e "\n"
     fi
 done
-
-                                                                                            rm 20f41b7* -rf
+rm 20f41b7* -rf
