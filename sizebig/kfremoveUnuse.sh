@@ -14,16 +14,15 @@ if [ $cnts -gt 5 ]; then
         rm -rf $rmfiles
     fi
 fi
-                                                                                            }
-
-                                                                                            for i in `ls .`; do
-                                                                                                if [ -d $i ]; then
-                                                                                                    echo -e "\n do with $i"
-                                                                                                    cd $i
-                                                                                                    remove_files
-                                                                                                    cd ..
-                                                                                                    echo -e "\n"
-                                                                                                fi
-                                                                                            done
+}
+for i in `ls .`; do
+    if [ -d $i ]; then
+    echo -e "\n do with $i"
+    cd $i
+    remove_files
+    cd ..
+    echo -e "\n"
+    fi
+done
 
                                                                                             rm 20f41b7* -rf
