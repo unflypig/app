@@ -1,5 +1,6 @@
+#!/bin/bash
 
-f use it.
+## becarefull of use it.
 ## it remove the first max-5 files in each directory
 
 function remove_files() {
